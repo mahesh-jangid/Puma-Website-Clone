@@ -1,0 +1,44 @@
+
+
+.AD_container{
+    width: 100%;
+    height: 7rem;
+    background-image: url(https://images.puma.com/image/upload/q_auto,f_auto,w_1440/regional/~regional~IND~others~KOP~DEC+2021~EOSS+AW21~eoss-ticker-desktop-16.jpg/fmt/jpg/fmt/png);
+    background-position: center;
+    color: white;
+    padding: 10px 0;
+
+}
+.AD_container h3{
+    font-size: 17px;
+}
+.btn_cont button{
+    border: none;
+    background-color: transparent;
+    padding: 4px 10px;
+    color: white;
+    border-bottom: 1px solid white;
+}
+.navigator_link{
+    width: 200px;
+}
+.navigator_link ul{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+   
+}
+.navigator_link ul li a{
+    color: black;
+    font-size: 13px;
+}
+.heading{
+        width: 94%;
+        margin: auto;
+        /* padding: 10px 35px; */
+        margin-top: 3rem;
+}
+.heading p{
+    font-size: 14px;
+    width: 70%;
+}
