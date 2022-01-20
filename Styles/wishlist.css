@@ -1,0 +1,66 @@
+.AD_container {
+  text-align: center;
+}
+#list {
+  display: flex;
+  align-items: center;
+  padding: 5px 10px;
+}
+#list > div > ul {
+  display: flex;
+  gap: 20px;
+}
+#list > div > ul > li {
+  margin-right: 10px;
+}
+#wishlist {
+
+  padding: 0px 51px;
+  margin-top: -33px;
+}
+#show > img {
+  width: 20%;
+  margin-right: 30px;
+}
+#show {
+  display: flex;
+
+  justify-content: center;
+  padding-right: -20px;
+}
+
+#text > div {
+  width: 400px;
+  padding: 0px 15px;
+}
+#text > div:first-child {
+  display: flex;
+  justify-content: space-between;
+}
+#lower > div > p {
+  color: #9ab;
+}
+#lower {
+  display: flex;
+  justify-content: space-between;
+}
+#lower > div:last-child {
+  margin-top: 10px;
+}
+.far {
+  margin-right: 5px;
+}
+#one {
+  padding: 10px 20px;
+  background-color: transparent;
+  margin-left: 18px;
+  display: block;
+}
+#two {
+  margin-top: 20px;
+  margin-left: 18px;
+  padding: 10px 160px;
+  background-color: #b97;
+  border: none;
+  text-align: center;
+}
