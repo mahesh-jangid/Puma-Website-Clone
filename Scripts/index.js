@@ -20,22 +20,6 @@ function fixedNav() {
     }
   };
 }
-/// --------------- To Fix Filter section --------------------  //////
-
-function fixedfilter() {
-  const DOM_filter_cont = document.querySelector(".filter_cont");
-  const navHeight = document.documentElement.clientHeight;
-
-  window.onscroll = function () {
-    var scroll = document.documentElement.scrollTop;
-
-    if (scroll > navHeight) {
-      DOM_filter_cont.classList.add("filter_fixed");
-    } else {
-      DOM_filter_cont.classList.remove("filter_fixed");
-    }
-  };
-}
 
 // ------------------------ Slider --------------------------------------///////
 

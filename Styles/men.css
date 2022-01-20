@@ -43,11 +43,18 @@
 }
 
 .filter_cont {
+    position: sticky;
   width: 94%;
   margin: auto;
   padding: 0;
+   top: 5rem;
+   background-color: white;
+   z-index: 888;
+   
   margin-bottom: -20px;
 }
+
+   
 select {
   padding: 9px 13px;
   min-width: 150px;
@@ -120,12 +127,7 @@ select {
   font-weight: lighter;
   text-decoration: underline;
 }
-.filter_cont {
-  position: sticky;
-  top: 5rem;
-  background-color: white;
-  z-index: 888;
-}
+
 @media screen and (min-width: 576px) {
   select {
     padding: 9px 13px;
