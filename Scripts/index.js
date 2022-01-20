@@ -20,11 +20,31 @@ function fixedNav() {
     }
   };
 }
-fixedNav();
+/// --------------- To Fix Filter section --------------------  //////
+
+function fixedfilter() {
+  const DOM_filter_cont = document.querySelector(".filter_cont");
+  const navHeight = document.documentElement.clientHeight;
+
+  window.onscroll = function () {
+    var scroll = document.documentElement.scrollTop;
+
+    if (scroll > navHeight) {
+      DOM_filter_cont.classList.add("filter_fixed");
+    } else {
+      DOM_filter_cont.classList.remove("filter_fixed");
+    }
+  };
+}
 
 // ------------------------ Slider --------------------------------------///////
 
-document.addEventListener("DOMContentLoaded", slideritemShow);
+document.addEventListener("DOMContentLoaded", function () {
+  const loader = document.querySelector(".loader");
+  loader.classList.add("hide_loader");
+  slideritemShow();
+  fixedNav();
+});
 
 const slider_left_btn = document.querySelector(".fa-chevron-circle-left");
 const slider_right_btn = document.querySelector(".fa-chevron-circle-right");

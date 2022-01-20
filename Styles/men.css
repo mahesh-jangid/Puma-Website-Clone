@@ -1,44 +1,143 @@
+.AD_container {
+  width: 100%;
+  height: 7rem;
+  background-image: url(https://images.puma.com/image/upload/q_auto,f_auto,w_1440/regional/~regional~IND~others~KOP~DEC+2021~EOSS+AW21~eoss-ticker-desktop-16.jpg/fmt/jpg/fmt/png);
+  background-position: center;
+  color: white;
+  padding: 10px 0;
+}
+.AD_container h3 {
+  font-size: 17px;
+}
+.btn_cont button {
+  border: none;
+  background-color: transparent;
+  padding: 4px 10px;
+  color: white;
+  border-bottom: 1px solid white;
+}
+.navigator_link {
+  width: 200px;
+}
+.navigator_link ul {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.navigator_link ul li a {
+  color: black;
+  font-size: 13px;
+}
+.heading {
+  width: 94%;
+  margin: auto;
+  /* padding: 10px 35px; */
+  margin-top: 3rem;
+}
+.heading p {
+  font-size: 14px;
+  width: 70%;
+}
+.ml-auto {
+  margin-left: auto;
+}
 
+.filter_cont {
+  width: 94%;
+  margin: auto;
+  padding: 0;
+  margin-bottom: -20px;
+}
+select {
+  padding: 9px 13px;
+  min-width: 150px;
+}
+.product_cont {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(290px, 1fr));
+  grid-row-gap: 30px;
+  grid-column-gap: 10px;
+  width: 98%;
+  margin: auto;
+}
+.prod {
+  cursor: pointer;
+}
+.grid_2_item {
+  grid-template-columns: repeat(2, minmax(290px, 1fr));
+}
+.main {
+  width: 92%;
+  margin: auto;
+}
 
-.AD_container{
+.product_cont .prod .image {
+  object-fit: cover;
+}
+.image img {
+  width: 100%;
+  height: auto;
+}
+.product_cont .prod .img_desc.d-flex {
+  justify-content: space-between !important;
+  padding: 8px 11px;
+}
+.img_desc > p {
+  font-size: 13px;
+  width: 70%;
+}
+.price_cont p:nth-child(2) {
+  text-decoration: line-through;
+}
+.price_cont p {
+  font-size: 14px;
+  font-weight: 600;
+}
+.price_cont p:nth-child(2) {
+  font-size: 12px;
+  font-weight: lighter;
+}
+.total_prod {
+  margin: 0 40px;
+}
+.total_prod i {
+  margin: 0 15px;
+}
+.total_prod i {
+  font-size: 20px;
+  cursor: pointer;
+}
+.others_links {
+  margin-top: 6rem;
+  margin-left: 5rem;
+}
+.others_links span {
+  color: black;
+  font-weight: bold;
+}
+.others_links a {
+  color: rgb(62, 61, 61);
+  font-weight: lighter;
+  text-decoration: underline;
+}
+.filter_cont {
+  position: sticky;
+  top: 5rem;
+  background-color: white;
+  z-index: 888;
+}
+@media screen and (min-width: 576px) {
+  select {
+    padding: 9px 13px;
     width: 100%;
-    height: 7rem;
-    background-image: url(https://images.puma.com/image/upload/q_auto,f_auto,w_1440/regional/~regional~IND~others~KOP~DEC+2021~EOSS+AW21~eoss-ticker-desktop-16.jpg/fmt/jpg/fmt/png);
-    background-position: center;
-    color: white;
-    padding: 10px 0;
-
+    margin-top: 10px;
+  }
+  .display {
+    display: none !important;
+  }
 }
-.AD_container h3{
-    font-size: 17px;
-}
-.btn_cont button{
-    border: none;
-    background-color: transparent;
-    padding: 4px 10px;
-    color: white;
-    border-bottom: 1px solid white;
-}
-.navigator_link{
-    width: 200px;
-}
-.navigator_link ul{
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-   
-}
-.navigator_link ul li a{
-    color: black;
-    font-size: 13px;
-}
-.heading{
-        width: 94%;
-        margin: auto;
-        /* padding: 10px 35px; */
-        margin-top: 3rem;
-}
-.heading p{
-    font-size: 14px;
-    width: 70%;
+@media screen and (min-width: 768px) {
+  .display {
+    display: inline-flex !important;
+  }
 }
