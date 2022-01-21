@@ -1,189 +1,162 @@
-
 import footer from "../Components/footer.js";
 import navbar from "../Components/navbar.js";
+const DOM_footer = document.querySelector("#footer");
+DOM_footer.innerHTML = footer();
+let nav_div = document.querySelector(".navbar");
+nav_div.innerHTML = navbar();
 
-
-let nav_div=document.querySelector('.navbar');
-nav_div.innerHTML=navbar();
-
-let footer_div=document.getElementById('footer_div');
-footer_div.innerHTML=footer();
 //signup div
-    let signup_div=document.getElementById('signup_div');
-    signup_div.onclick=()=>{
-        console.log('clicked');
-        document.getElementById('mid').remove();
-        document.getElementById('bottom').remove();
-        let div=document.createElement('div');
-        div.setAttribute('id','signup_mid_div');
-        let input1=document.createElement('input');
-        input1.setAttribute('placeholder',' FULL NAME');
-        let input2=document.createElement('input');
-        input2.setAttribute('placeholder',' USER NAME');
-       
-        let input3=document.createElement('input');
-        input3.setAttribute('placeholder',' EMAIL');
-        
-        let input4=document.createElement('input');
-        input4.setAttribute('placeholder',' PASSWORD');
-       
-        let signup_btn=document.createElement('button');
-       
+let signup_div = document.getElementById("signup_div");
+signup_div.onclick = () => {
+  console.log("clicked");
+  document.getElementById("mid").remove();
+  document.getElementById("bottom").remove();
+  let div = document.createElement("div");
+  div.setAttribute("id", "signup_mid_div");
+  let input1 = document.createElement("input");
+  input1.setAttribute("placeholder", " FULL NAME");
+  let input2 = document.createElement("input");
+  input2.setAttribute("placeholder", " USER NAME");
 
-        input1.setAttribute('id','full_name');
-        input2.setAttribute('id','user_name');
-        input3.setAttribute('id','signup_email');
-        input4.setAttribute('id','signup_password');
-        signup_btn.setAttribute('id','signup_btn'); 
+  let input3 = document.createElement("input");
+  input3.setAttribute("placeholder", " EMAIL");
 
+  let input4 = document.createElement("input");
+  input4.setAttribute("placeholder", " PASSWORD");
 
-        signup_btn.onclick=()=>{
-                signup();
-        }
-        signup_btn.textContent="CREATE ACCOUNT";
+  let signup_btn = document.createElement("button");
 
-        div.append(input1,input2,input3,input4,signup_btn);
-        document.getElementById('left_div').append(div);
-    }
+  input1.setAttribute("id", "full_name");
+  input2.setAttribute("id", "user_name");
+  input3.setAttribute("id", "signup_email");
+  input4.setAttribute("id", "signup_password");
+  signup_btn.setAttribute("id", "signup_btn");
 
-    
-        //login div
-        document.getElementById('login_div').onclick=()=>{
-            
-            document.getElementById('signup_mid_div').remove();
-            
-            let mid=document.createElement('div');
-            let bottom=document.createElement('div');
+  signup_btn.onclick = () => {
+    signup();
+  };
+  signup_btn.textContent = "CREATE ACCOUNT";
 
-            mid.setAttribute('id','mid');
+  div.append(input1, input2, input3, input4, signup_btn);
+  document.getElementById("left_div").append(div);
+};
 
-            let login_input1=document.createElement('input');
-            let login_input2=document.createElement('input');
-            login_input1.setAttribute('placeholder','USER NAME');
-            login_input1.setAttribute('id','user_name');
-            login_input2.setAttribute('placeholder','PASSWORD');
-            login_input2.setAttribute('id','login_password');
-            bottom.setAttribute('id','bottom');
-            mid.append(login_input1,login_input2);
+//login div
+document.getElementById("login_div").onclick = () => {
+  document.getElementById("signup_mid_div").remove();
 
-            
-            document.getElementById('left_div').append(mid,bottom);
-            console.log('login');
+  let mid = document.createElement("div");
+  let bottom = document.createElement("div");
 
-            //bottom div content
+  mid.setAttribute("id", "mid");
 
-            let checkbox_div=document.createElement('div');
-            checkbox_div.setAttribute('id','check_box');
-                let check_box_div1=document.createElement('div');
-                let check_box_div2=document.createElement('div');
+  let login_input1 = document.createElement("input");
+  let login_input2 = document.createElement("input");
+  login_input1.setAttribute("placeholder", "USER NAME");
+  login_input1.setAttribute("id", "user_name");
+  login_input2.setAttribute("placeholder", "PASSWORD");
+  login_input2.setAttribute("id", "login_password");
+  bottom.setAttribute("id", "bottom");
+  mid.append(login_input1, login_input2);
 
-                let input=document.createElement('input');
-                input.setAttribute('type','checkbox');
+  document.getElementById("left_div").append(mid, bottom);
+  console.log("login");
 
-                let p=document.createElement('span');
-                p.textContent="Remember me";
+  //bottom div content
 
-                check_box_div1.append(input);
-                check_box_div2.append(p);
+  let checkbox_div = document.createElement("div");
+  checkbox_div.setAttribute("id", "check_box");
+  let check_box_div1 = document.createElement("div");
+  let check_box_div2 = document.createElement("div");
 
-                checkbox_div.append(check_box_div1,check_box_div2);
+  let input = document.createElement("input");
+  input.setAttribute("type", "checkbox");
 
+  let p = document.createElement("span");
+  p.textContent = "Remember me";
 
-            var div_login_btn=document.createElement('div');
-            div_login_btn.setAttribute('id','login_btn_div');
+  check_box_div1.append(input);
+  check_box_div2.append(p);
 
-           let div_login_btn_div1=document.createElement('div');
-            let div_login_btn_div2=document.createElement('div');
+  checkbox_div.append(check_box_div1, check_box_div2);
 
-                let login_button=document.createElement('button');
-                login_button.setAttribute('id','login_btn');
-                login_button.textContent="LOGIN"
-                div_login_btn_div1.append(login_button);
-                
-                let link=document.createElement('a');
-                link.textContent="FORGOTTEN YOUR PASSWORD?";
-                div_login_btn_div2.append(link);
+  var div_login_btn = document.createElement("div");
+  div_login_btn.setAttribute("id", "login_btn_div");
 
-                div_login_btn.append(div_login_btn_div1,div_login_btn_div2); 
-            bottom.append(checkbox_div,div_login_btn);
-            login_button.onclick=()=>{
-                login();
-            }
-  
+  let div_login_btn_div1 = document.createElement("div");
+  let div_login_btn_div2 = document.createElement("div");
 
+  let login_button = document.createElement("button");
+  login_button.setAttribute("id", "login_btn");
+  login_button.textContent = "LOGIN";
+  div_login_btn_div1.append(login_button);
 
-        }
+  let link = document.createElement("a");
+  link.textContent = "FORGOTTEN YOUR PASSWORD?";
+  div_login_btn_div2.append(link);
 
-        document.getElementById('login_btn').onclick=()=>{
-        
-            login();
-        };
+  div_login_btn.append(div_login_btn_div1, div_login_btn_div2);
+  bottom.append(checkbox_div, div_login_btn);
+  login_button.onclick = () => {
+    login();
+  };
+};
 
-        async function login(){
+document.getElementById("login_btn").onclick = () => {
+  login();
+};
 
-            try{
-            var  login_data={
-                    username:document.getElementById('user_name').value,
-                    password:document.getElementById('login_password').value,
-                }
+async function login() {
+  try {
+    var login_data = {
+      username: document.getElementById("user_name").value,
+      password: document.getElementById("login_password").value,
+    };
 
-                login_data=JSON.stringify(login_data);
-                console.log(login_data);
+    login_data = JSON.stringify(login_data);
+    console.log(login_data);
 
-                let url=`https://masai-api-mocker.herokuapp.com/auth/login`;
-                let response=await fetch(url,{
+    let url = `https://masai-api-mocker.herokuapp.com/auth/login`;
+    let response = await fetch(url, {
+      method: "POST",
+      body: login_data,
+      headers: {
+        "Content-Type": "application/json",
+      },
+    });
 
-                    method:"POST",
-                    body:login_data,
-                    headers:{
-                        "Content-Type":"application/json",
-                    }
-                });
+    let result = await response.json();
+    console.log(result);
+  } catch (err) {
+    console.log(err);
+  }
+}
 
-                let result= await response.json();
-                console.log(result);
-            }
-                catch(err){
-                console.log(err);
-                }
+async function signup() {
+  try {
+    var data = {
+      name: document.getElementById("full_name").value,
+      email: document.getElementById("signup_email").value,
+      password: document.getElementById("signup_password").value,
+      username: document.getElementById("user_name").value,
+      mobile: "9876543210",
+      description: "A Transformation in education!",
+    };
 
+    data = JSON.stringify(data);
+    let url = `https://masai-api-mocker.herokuapp.com/auth/register`;
 
-        }
+    let response = await fetch(url, {
+      method: "POST",
+      body: data,
+      headers: {
+        "Content-Type": "application/json",
+      },
+    });
 
-        async function signup(){
-             
-            try{
-                var data={
-                 name:document.getElementById('full_name').value,
-                  email:document.getElementById('signup_email').value,
-                  password:document.getElementById('signup_password').value,
-                  username:document.getElementById('user_name').value,
-                  mobile: "9876543210",
-                 description: "A Transformation in education!" ,
-             }
-             
-             data=JSON.stringify(data);
-             let url=`https://masai-api-mocker.herokuapp.com/auth/register`;
-
-            let response=await fetch(url,{
-                method:'POST',
-                body:data,
-                headers:{
-                    'Content-Type':'application/json',
-                }
-            });
-
-            let result=await response.json();
-            console.log(result);
-            }
-            catch(err){
-                console.log(err);
-            }
-
-            
-            
-            
-
-
-
-         }
+    let result = await response.json();
+    console.log(result);
+  } catch (err) {
+    console.log(err);
+  }
+}

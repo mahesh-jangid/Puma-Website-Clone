@@ -39,7 +39,7 @@ a {
   display: flex;
   align-items: center;
   justify-content: center;
-  height: 2.4rem;
+  height: 2.6rem;
   text-align: center;
   background-color: #ae946d;
   color: white;
@@ -93,9 +93,7 @@ a {
 }
 
 .nav_info .nav_links {
-  flex-basis: 30%;
-  margin-right: auto;
-  /* margin-right: 90px; */
+  
   margin-top: 18px;
 }
 
@@ -133,8 +131,8 @@ a {
 }
 
 .nav_info .search_bar {
-  width: 22%;
-  padding: 6px 20px;
+     width: 39%;
+     padding: 5px 20px;
   border: 1px solid rgb(230, 227, 227);
   display: flex;
   align-items: center;
@@ -166,7 +164,12 @@ a {
   background-color: rgb(37, 36, 36);
   color: white;
 }
-
+.right_part {
+  width: 64%;
+  display: flex;
+  align-items: center;
+  justify-content: end;
+}
 /* ----------------for search bg ---------------- */
 .search_bg_light {
   background-color: white;
@@ -189,10 +192,10 @@ a {
 
 /* ------------------profile CSS----------- */
 .nav_info .desktop_actions .profile_info {
-  position: absolute;
-  top: 6rem;
-  right: 2.32rem;
-  width: 100%;
+ position: absolute;
+ top: 5rem;
+ right: 0rem;
+ width: 272px;
   padding: 4px 8px;
   background-color: rgb(255, 255, 255);
   z-index: 999;
@@ -209,11 +212,12 @@ a {
   opacity: 1;
 }
 
-.nav_info .desktop_actions .profile_info .user_name {
+/* .nav_info .desktop_actions .profile_info .user_name {
   padding-left: 20px;
   font-weight: 900;
   font-size: 15px;
-}
+} */
+
 
 .nav_info .desktop_actions .profile_info .profile_links ul {
   padding-left: 20px;
@@ -232,11 +236,11 @@ a {
   color: black;
 }
 
-.nav_info .desktop_actions .profile_info .profile_links .welcome_title {
+/* .nav_info .desktop_actions .profile_info .profile_links .welcome_title {
   font-size: 16px;
   line-height: 26px;
   padding: 0 8px;
-}
+} */
 
 .nav_info .desktop_actions .profile_info .profile_links .signUp li {
   border: 0.23px solid gray;
@@ -250,6 +254,20 @@ a {
   font-size: 15px;
   font-weight: 800;
   color: #fc427b;
+}
+.profile_info button{
+width: 83%;
+margin: 0 20px;
+border: none;
+padding: 8px 0;
+background-color: #bb9977;
+color: white;
+}
+.profile_info p{
+  font-size: 12px;
+}
+.right .profile_info hr{
+  margin: 0;
 }
 
 /* ------------------End of profile CSS----------- */
@@ -410,7 +428,7 @@ p {
   margin: 0 20px;
   overflow: hidden;
   position: relative;
-  width: 94%;
+  width: 97%;
   margin: auto;
   margin-top: 50px;
 }
@@ -425,13 +443,16 @@ p {
   transition: all 0.4s ease-in;
 }
 .slider_container .slider img {
-  width: 100%;
-  /* height: 370px; */
+  /* width: 100%;
   height: 455px;
   transform: scale(1.1);
-
+  transition: all 0.4s ease-in; */
+  width: 318px;
+  height: 366px;
+  height: 490px;
+  transform: scale(1.2);
   transition: all 0.4s ease-in;
-  /* object-fit: cover; */
+  object-fit: cover;
 }
 .slider_container .slider .content {
   position: absolute;
@@ -439,12 +460,14 @@ p {
   left: 0;
   background-color: white;
   width: 100%;
-  height: 300px;
+  /* height: 300px; */
+      height: 360px;
   text-align: center;
   border-top-left-radius: 50%;
   border-top-right-radius: 50%;
   padding: 46px;
   transition: bottom 0.4s ease-in;
+  padding-top: 4rem;
 }
 .slider_container .slider .content .social_icons i {
   font-size: 25px;
@@ -455,7 +478,7 @@ p {
   bottom: -10%;
 }
 .slider_container .slider:hover img {
-  transform: scale(1);
+  transform: scale(1.1);
 }
 
 .indicater {
@@ -465,14 +488,18 @@ p {
   display: flex;
   align-items: center;
   justify-content: space-between;
+  display: none;
+}
+.slider_container:hover .indicater{
+  display: inline-flex;
 }
 .indicater i {
-  font-size: 30px;
+  font-size: 42px;
   cursor: pointer;
 }
 .indicater .circle {
-  width: 60px;
-  height: 60px;
+  width: 71px;
+  height: 71px;
   border-radius: 50%;
   background-color: rgb(241, 237, 237);
   display: flex;
@@ -550,24 +577,24 @@ p {
 .left .footer_links ul li a:hover {
   color: rgb(253, 253, 253);
 }
-.footer_info .right {
+ .right {
   width: 270px;
 }
-.footer_info .right .social_icons {
+ .right .social_icons {
   display: flex;
   align-items: center;
   justify-content: space-between;
   width: 96%;
   margin: 19px 6px;
 }
-.footer_info .right .social_icons i {
+ .right .social_icons i {
   font-size: 26px;
   color: white;
 }
-.footer_info .right .social_icons:hover i {
+ .right .social_icons:hover i {
   color: rgb(150, 140, 140);
 }
-.footer_info .right .social_icons i:hover {
+ .right .social_icons i:hover {
   color: rgb(253, 253, 253);
 }
 
