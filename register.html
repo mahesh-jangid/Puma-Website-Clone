@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./styles.css">
+</head>
+<body>
+        <div id="navbar">
+            <a href="./index.html">Home</a>
+            <a href="./login.html">Login</a>
+            <a href="./register.html">SignUp</a>
+        </div>
+    </div>
+    <div class="login">
+        <form name='form-login'>
+    
+            <h1>REGISTER</h1>
+
+            <label for="name1">name</label>
+            <input type="text" id="name" placeholder="Name" required>
+
+            <label for="Mobile">Mobile</label>
+            <input type="number" id="mobile" placeholder="Mobile" required>
+    
+            <label for="name">Email</label>
+            <input type="email" id="name" placeholder="Username" required>
+    
+            <label for="pw">Password</label>
+            <input type="password"
+                   id= "pw"
+                   placeholder="Password" required>
+    
+            <ul class="Instruction-text">
+                <li class="length">Must be at least 8 characters long.</li>
+                <li class="lowercase">Must contain a lowercase letter.</li>
+                <li class="uppercase">Must contain an uppercase letter.</li>
+                <li class="special">Must contain a number or special character.</li>
+            </ul>
+            <input id="rgstr_btn" type="submit" value="Register" onclick="store()">
+    
+        </form>
+    </div>
+</body>
+</html>
+<script>
+function store(){
+
+    var name = document.getElementById('name');
+    var pw = document.getElementById('pw');
+    var lowerCaseLetters = /[a-z]/g;
+    var upperCaseLetters = /[A-Z]/g;
+    var numbers = /[0-9]/g;
+
+    if(name.value.length == 0){
+        alert('Please fill in email');
+
+    }else if(pw.value.length == 0){
+        alert('Please fill in password');
+
+    }else if(name.value.length == 0 && pw.value.length == 0){
+        alert('Please fill in email and password');
+
+    }else if(pw.value.length > 8){
+        alert('Max of 8');
+
+    }else if(!pw.value.match(numbers)){
+        alert('please add 1 number');
+
+    }else if(!pw.value.match(upperCaseLetters)){
+        alert('please add 1 uppercase letter');
+
+    }else if(!pw.value.match(lowerCaseLetters)){
+        alert('please add 1 lovercase letter');
+
+    }else{
+        localStorage.setItem('name', name.value);
+        localStorage.setItem('pw', pw.value);
+        alert('Your account has been created');
+    }
+}
+</script>
