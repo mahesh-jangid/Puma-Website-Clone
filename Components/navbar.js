@@ -1,5 +1,5 @@
 function navbar() {
-  return `    <div class="nav_info">
+  return `  <div class="nav_info">
         <div class="logo">
           <img
             src="data:image/png;base64,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"
@@ -8,8 +8,9 @@ function navbar() {
         </div>
         <div class="nav_links">
           <ul>
+            
+            <li><a href="product.html">Women</a></li>
             <li><a href="men.html">Men</a></li>
-            <li><a href="women.html">Women</a></li>
             <li><a href="kids.html">Kids</a></li>
             <li><a href="collaborations.html">Collaborations</a></li>
             <li><a href="sport.html">Sport</a></li>
@@ -18,8 +19,9 @@ function navbar() {
         </div>
         <div class="mobo_links">
           <ul>
+            
+            <li><a href="product.html">Women</a></li>
             <li><a href="men.html">Men</a></li>
-            <li><a href="men.html">Women</a></li>
             <li><a href="men.html">Kids</a></li>
             <li><a href="men.html">Beauty</a></li>
           </ul>

@@ -20,11 +20,15 @@ function fixedNav() {
     }
   };
 }
-fixedNav();
 
 // ------------------------ Slider --------------------------------------///////
 
-document.addEventListener("DOMContentLoaded", slideritemShow);
+document.addEventListener("DOMContentLoaded", function () {
+  const loader = document.querySelector(".loader");
+  loader.classList.add("hide_loader");
+  slideritemShow();
+  fixedNav();
+});
 
 const slider_left_btn = document.querySelector(".fa-chevron-circle-left");
 const slider_right_btn = document.querySelector(".fa-chevron-circle-right");
