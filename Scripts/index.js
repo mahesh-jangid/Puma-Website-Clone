@@ -4,7 +4,12 @@ const DOM_footer = document.querySelector("#footer");
 DOM_footer.innerHTML = footer();
 const DOM_navbar = document.querySelector(".navbar");
 DOM_navbar.innerHTML = navbar();
+let totalWishListItems =
+  JSON.parse(localStorage.getItem("totalWishListItems")) || 0;
 
+var DOMWishlist = document.querySelector("#wishlist_items");
+DOMWishlist.textContent = totalWishListItems;
+// totalWishListitems();
 /// --------------- To Fix The Nav --------------------  //////
 
 function fixedNav() {
@@ -91,4 +96,11 @@ function rightBtn() {
   }
 }
 
+// function totalWishListitems() {
+//   var TotalWishListItem = updatedProd.length;
+//   console.log(TotalWishListItem);
+
+//   DOMWishlist.textContent = TotalWishListItem;
+//   localStorage.setItem("totalWishListItems", JSON.stringify(TotalWishListItem));
+// }
 // ------------------------ End of Slider --------------------------------------///////

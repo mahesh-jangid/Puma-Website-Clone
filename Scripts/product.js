@@ -221,6 +221,14 @@ DOM_navbar.innerHTML = navbar();
 
 DisplayData(productData);
 // -------------------------For Displaying All Products-------------------///
+
+let totalWishListItems =
+  JSON.parse(localStorage.getItem("totalWishListItems")) || 0;
+
+var DOMWishlist = document.querySelector("#wishlist_items");
+DOMWishlist.textContent = totalWishListItems;
+
+let wishlistArr = [];
 function DisplayData(productData) {
   document.querySelector(".product_cont").innerHTML = "";
   productData.map(function (elem) {
@@ -251,10 +259,15 @@ function DisplayData(productData) {
 
     productDiv.addEventListener("click", function () {
       localStorage.setItem("FullDetailProduct", JSON.stringify(elem));
+      addInwishlist(elem);
+      window.location.href = "detailProd.html";
     });
   });
 }
-
+// function addInwishlist(elem) {
+//   wishlistArr.push(elem);
+//   localStorage.setItem("WishListItems", JSON.stringify(wishlistArr));
+// }
 document.querySelector("#price").addEventListener("change", handlepricesort);
 function handlepricesort() {
   var selected = document.querySelector("#price").value;
@@ -271,6 +284,7 @@ function handlepricesort() {
     });
   }
   localStorage.setItem("shoppingItems", JSON.stringify(productData));
+
   DisplayData(productData);
 }
 // -------------------------End of  Displaying All Products-------------------///

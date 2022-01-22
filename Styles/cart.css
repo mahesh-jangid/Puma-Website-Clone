@@ -1,0 +1,88 @@
+#sub{
+    margin: 5%; color: black;
+}
+#easy-returns{
+    border: 1px solid rgb(153, 151, 151); text-align: center; height: 40px; border-radius: 5px;
+}
+#easy-returns>p{
+    font-size: 15px; color: rgb(110, 106, 106); color: black;
+}
+#cart-items{
+    display: flex; margin-top: 5%; gap: 10%; color: black; justify-content: end;
+}
+#item-design{
+    border: 1px solid rgb(153, 151, 151);
+    display: flex; gap: 4%; height: 300px; width: 100%; border-radius: 5px; color: black;
+}
+#cart-details{
+    height: 450px; width: 30%; border-radius: 5px; color: black;
+}
+#item-image{
+    height: 90%; width: 100%; padding: 15px;
+}
+#cart-item-details{
+    line-height: 30px; padding: 1%;
+}
+.black{
+    color: black;
+}
+#quantity{
+    height: 12%; width: 30%; font-size: 25px;
+}
+#cart-item-price{
+    width: 18%; text-align: end; padding: 1%; color: black;
+}
+#original-price{
+    text-decoration: line-through;font-size: 25px; color: black;
+}
+#discount-price{
+    font-size: 25px; color: rgb(177, 9, 9);
+}
+#cart-icons{
+    display: flex; flex-direction: row; justify-content: space-between; font-size: 20px;
+}
+a{
+    text-decoration: none;
+}
+#Promocode{
+     padding: 5%; background-color: rgb(245, 236, 236)
+}
+
+.promo-box{
+    display: none;
+}
+input {
+  margin-top: 10%;
+  border-radius: 4px;
+  height: 30px;
+  width: 60%; font-size: 20px;
+}
+#promo-button{
+    height: 35px; width: 25%; font-size: 20px;
+}
+#js-apply-promo{
+    margin-top: 100px; color: black; font-size: 25px; 
+}
+#prices{
+
+}
+.sub-total{
+    display: flex; justify-content: space-between; font-size: 20px; margin: 10px; color: black;
+}
+.line{
+    border: 1px solid black; margin: 10px;
+}
+.grand-total{
+ display: flex; justify-content: space-between; font-size: 22px; margin: 10px; color: black;
+}
+#tax{
+    font-size: 15px; margin-top: 5px;
+}
+
+#cart-checkout{
+    background-color: burlywood; height: 40px; font-size: 20px;
+}
+#checkout{
+    text-align: center; padding: 8px; color: white;
+}
+

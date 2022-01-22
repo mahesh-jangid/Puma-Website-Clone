@@ -25,23 +25,34 @@ body{
   margin-top: -33px;
 }
 #show > img {
-  width: 20%;
+  width: 22%;
   margin-right: 30px;
+      border: 1px solid #80808014;
 }
 #show {
   display: flex;
-
   justify-content: center;
   padding-right: -20px;
+  margin-bottom: 3rem;
 }
 
 #text > div {
-  width: 400px;
+  width: 100%;
   padding: 0px 15px;
 }
-#text > div:first-child {
+/* #text > div:first-child {
   display: flex;
   justify-content: space-between;
+} */
+.price{
+  margin-top: 15px;
+}
+.price h3:nth-child(1){
+  font-size: 30px;
+}
+.price h3:nth-child(2){
+  font-size: 20px;
+  text-decoration: line-through;
 }
 #lower > div > p {
   color: #9ab;
@@ -56,11 +67,10 @@ body{
 .far {
   margin-right: 5px;
 }
-#one {
-  padding: 10px 20px;
-  background-color: transparent;
-  margin-left: 18px;
-  display: block;
+select {
+     padding: 9px 13px;
+     width: 30%;
+     margin-top: 10px;
 }
 #two {
   margin-top: 20px;
@@ -69,4 +79,7 @@ body{
   background-color: #b97;
   border: none;
   text-align: center;
+}
+i{
+  cursor: pointer;
 }

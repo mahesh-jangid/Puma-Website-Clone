@@ -35,14 +35,14 @@ function navbar() {
             <div class="wishlist_section desktop_view">
               <div class="icon wishlist_icon">
                 <a href="wishlist.html"><i class="far fa-heart"></i></a>
-                <span><h5 id="wishlist_items">2</h5></span>
+                <span><h5 id="wishlist_items">0</h5></span>
               </div>
               <!-- <div class="title wishlist_title">Wishlist</div> -->
             </div>
             <div class="bag_section desktop_view">
               <div class="icon bag_icon">
-                <a href="bag.html"><i class="fas fa-shopping-bag"></i></a>
-                <span><h5 id="bag_items">2</h5></span>
+                <a href="cart.html"><i class="fas fa-shopping-bag"></i></a>
+                <span><h5 id="bag_items">0</h5></span>
               </div>
               <!-- <div class="title bag_title">Bag</div> -->
             </div>
