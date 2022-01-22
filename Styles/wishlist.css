@@ -24,6 +24,9 @@ body{
   padding: 0px 51px;
   margin-top: -33px;
 }
+#wishlist>p{
+  margin-top: 20px;
+}
 #show > img {
   width: 20%;
   margin-right: 30px;
@@ -65,7 +68,7 @@ body{
 #two {
   margin-top: 20px;
   margin-left: 18px;
-  padding: 10px 160px;
+  padding: 10px 128px;
   background-color: #b97;
   border: none;
   text-align: center;
