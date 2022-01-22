@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./cart.css ">
+    <script src="https://use.fontawesome.com/releases/v5.15.4/js/all.js" data-auto-replace-svg="nest"></script>
+    <link rel="stylesheet" href="./styles.css">
+</head>
+<body>
+    <div id="container">
+        <div class="navbar"></div>
+        <div id="sub">
+            <h1>MY SHOPPING CART<span id="cart-count">(0)</span>
+            </h1>
+            <div id="easy-returns">
+                <p><i class="fas fa-undo"></i> Free and easy returns on all orders.</p>
+            </div>
+
+            <div id="cart-items">
+                <div id="item-design">
+                    <div id="cart-image">
+                        <img id="item-image" src="https://images.puma.com/image/upload/f_auto,q_auto,b_rgb:fafafa,w_1500,h_1500/global/586676/58/mod01/fnd/IND/fmt/png/Essentials-Regular-Fit-Men's-Jersey-Polo">
+                    </div>
+                    <div id="cart-item-details">
+                        <h3>Essentials Regular Fit Men's Jersey Polo</h3>
+                        <p class="black">Color:<span> Puma Royal</span></p>
+                        <p class="black">Size:<span>L</span></p>
+                        <p class="black">Style_Number:<span>586676_58</span></p>
+                        <select name="quantity" id="quantity">
+                            <option value="1">1</option>
+                            <option value="2">2</option>
+                            <option value="3">3</option>
+                            <option value="4">4</option>
+                            <option value="5">5</option>
+                            <option value="6">6</option>
+                          </select>
+                    </div>
+                    <div id="cart-item-price">
+                        <!-- <i class="fas fa-rupee-sign"></i>
+                        <i class="fas fa-rupee-sign"></i> -->
+                        <p id="discount-price">₹1,039</p>
+                        <p id="original-price">₹1,299</p>
+                        <div id="cart-icons">
+                            <a href="/"><i class="far fa-trash-alt"></i></a>
+                            <a href="/"><i class="far fa-edit"></i></a>
+                        </div>
+                    </div>
+                </div>
+
+                <div id="cart-details">    
+                        <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+                        <div id="Promocode">
+                            <a id="js-apply-promo" href="#">Apply a Promo Code</a>
+                            <div id="js-promo-box" class="promo-box">
+                            <input type="text">
+                            <button id="promo-button" onclick="">Apply</button>
+                        </div>
+                    </div>
+                    <div id="prices">
+                        <p class="sub-total">SubTotal<span class="price-span">₹1,039</span></p>
+
+                        <p class="sub-total">Shipping costs<span class="price-span">₹0</span></p>
+                        <div class="line"></div>
+                    </div>
+                    
+                    <p class="grand-total"><b>Grand Total</b><span id="tax"> Prices include GST</span><span class="price-span"><b>₹1,039</b></span></p>
+
+                    <div id="cart-checkout">
+                        <a href="">
+                        <p id="checkout"><b>CHECKOUT</b></p></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <section id="footer"></section>
+    </div>
+</body>
+</html>
+<script type="module">
+    import navbar from "./Components/navbar.js";
+    import footer from "./Components/footer.js";
+    const DOM_footer = document.querySelector("#footer");
+    DOM_footer.innerHTML = footer();
+    const DOM_navbar = document.querySelector(".navbar");
+    DOM_navbar.innerHTML = navbar();
+</script>
+<script>
+    $('form').hide();
+    $("#show").on("click", function() {
+    $('form ').slideToggle(300);
+    });
+
+    $("#js-apply-promo").on("click", function(){
+    $("#js-promo-box").fadeToggle();
+    })
+</script>
