@@ -21,6 +21,26 @@ function fixedNav() {
   };
 }
 
+// -------------Profile Card---------------////
+var profile_icon = document.querySelector(".user_icon");
+var profile_info = document.querySelector(".profile_info");
+
+profile_icon.addEventListener("click", function () {
+  if (profile_info.classList.contains("show_profile")) {
+    profile_info.classList.remove("show_profile");
+  } else {
+    profile_info.classList.add("show_profile");
+  }
+});
+// -------------End of Profile Card---------------////
+
+// --------------------Mobile Links -----------------//
+var mobile_menu = document.querySelector(".mobile_menu i");
+mobile_menu.addEventListener("click", function () {
+  var mobo_links = document.querySelector(".mobo_links");
+  mobo_links.classList.toggle("show_mobo_link");
+});
+// --------------------Mobile Links -----------------//
 // ------------------------ Slider --------------------------------------///////
 
 document.addEventListener("DOMContentLoaded", function () {
