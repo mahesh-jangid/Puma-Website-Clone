@@ -78,6 +78,7 @@ function showWishlistItems(updatedProd) {
     cartBtn.forEach(function (btn) {
       btn.addEventListener("click", function () {
         addinbag(elem);
+        window.location.href = "cart.html";
       });
     });
   });

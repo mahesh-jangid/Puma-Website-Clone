@@ -48,7 +48,7 @@ function navbar() {
             </div>
             <div class="profile_section desktop_view">
               <div class="icon user_icon">
-                <a href="###"><i class="fas fa-user-plus"></i></a>
+                <a><i class="fas fa-user-plus"></i></a>
               </div>
               <!-- <div class="title user_title">Profile</div> -->
             </div>
@@ -68,7 +68,7 @@ function navbar() {
                 <hr />
                 <a href="login.html"><button>Login</button></a>
                 <p class="text-dark m-3">
-                  <span>Not Account yet ? <a href="">REGISTER HERE</a></span>
+                  <span>Not Account yet ? <a href="login.html">REGISTER HERE</a></span>
                 </p>
               </div>
             </div>

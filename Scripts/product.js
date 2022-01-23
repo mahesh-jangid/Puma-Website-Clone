@@ -230,7 +230,7 @@ DOMWishlist.textContent = totalWishListItems;
 
 let wishlistArr = [];
 function DisplayData(productData) {
-  document.querySelector(".product_cont").innerHTML = "";
+  // document.querySelector(".product_cont").innerHTML = "";
   productData.map(function (elem) {
     var prod_container = document.querySelector(".product_cont");
 
@@ -258,16 +258,13 @@ function DisplayData(productData) {
     prod_container.append(productDiv);
 
     productDiv.addEventListener("click", function () {
+      // addInwishlist(elem);
       localStorage.setItem("FullDetailProduct", JSON.stringify(elem));
-      addInwishlist(elem);
       window.location.href = "detailProd.html";
     });
   });
 }
-// function addInwishlist(elem) {
-//   wishlistArr.push(elem);
-//   localStorage.setItem("WishListItems", JSON.stringify(wishlistArr));
-// }
+
 document.querySelector("#price").addEventListener("change", handlepricesort);
 function handlepricesort() {
   var selected = document.querySelector("#price").value;
