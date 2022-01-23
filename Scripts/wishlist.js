@@ -21,7 +21,7 @@ function totalWishListitems() {
   DOMWishlist.textContent = TotalWishListItem;
   localStorage.setItem("totalWishListItems", JSON.stringify(TotalWishListItem));
 }
-let bagarr =JSON.parse(localStorage.getItem('bagItems'))||[];
+let bagarr = JSON.parse(localStorage.getItem("bagItems")) || [];
 function showWishlistItems(updatedProd) {
   // document.querySelector("#wishlist").innerHTML = "";
   updatedProd.map(function (elem, index) {
@@ -75,14 +75,20 @@ function showWishlistItems(updatedProd) {
       });
     });
 
+    cartBtn.forEach(function (btn) {
+      btn.addEventListener("click", function () {
+        addinbag(elem);
+        window.location.href = "cart.html";
+      });
+    });
     // cartBtn.forEach(function (btn) {
     //   btn.addEventListener("click", function () {
     //     addinbag(elem);
     //   });
     // });
-    document.getElementById('two').onclick=()=>{
+    document.getElementById("two").onclick = () => {
       addinbag(elem);
-    }
+    };
   });
 }
 function deleteProd(index) {
@@ -93,9 +99,9 @@ function deleteProd(index) {
 }
 function addinbag(elem) {
   bagarr.push(elem);
-  
+
   localStorage.setItem("bagItems", JSON.stringify(bagarr));
-  bagarr=[];
-  
-  console.log('cliked bag button');
+  bagarr = [];
+
+  console.log("cliked bag button");
 }

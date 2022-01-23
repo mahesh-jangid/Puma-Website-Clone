@@ -58,10 +58,13 @@ function hideShipRet() {
   }
 }
 // end here
+let wishListArray = [];
+let bagarr = [];
+let detailProd = JSON.parse(localStorage.getItem("FullDetailProduct")) || [];
 
 let detailProd = JSON.parse(localStorage.getItem("FullDetailProduct")) || [];
 
-let wishListArray = JSON.parse(localStorage.getItem('wishlistItems'))||[];
+let wishListArray = JSON.parse(localStorage.getItem("wishlistItems")) || [];
 
 let prod_name = document.querySelector(".prod-name");
 let prod_actual_price = document.querySelector(".prod-price span");
@@ -69,23 +72,40 @@ let prod_strick_price = document.querySelector(".strick-price span");
 let prod_image = document.querySelector(".product-img1");
 
 prod_name.innerHTML = `${detailProd.brand_info}`;
-prod_actual_price.innerHTML = `${detailProd.price}`;
-prod_strick_price.innerHTML = `${detailProd.strick_price}`;
+prod_actual_price.innerHTML = `Rs ${detailProd.price}`;
+prod_strick_price.innerHTML = `Rs ${detailProd.strick_price}`;
 prod_image.src = `${detailProd.image}`;
 
 let wishlistBtn = document.querySelector(".wish-list-btn");
+
 wishlistBtn.addEventListener("click", function () {
   wishListArray.push(detailProd);
-  localStorage.setItem("wishlistItems", JSON.stringify(wishListArray));
+  localStorage.setItem("WishListItems", JSON.stringify(wishListArray));
   window.location.href = "wishlist.html";
 });
+document.querySelector("#quantity").addEventListener("change", function () {
+  let prod_name = document.querySelector(".prod-name");
+  let prod_actual_price = document.querySelector(".prod-price span");
+  let prod_strick_price = document.querySelector(".strick-price span");
+  let prod_image = document.querySelector(".product-img1");
+  let quantity = document.querySelector("#quantity").value;
+  let new_price = detailProd.price * quantity;
+  let new_strick_price = detailProd.strick_price * quantity;
+  prod_actual_price.textContent = `Rs ${new_price}`;
+  prod_strick_price.textContent = `Rs ${new_strick_price}`;
+  let updated = {
+    image: detailProd.image,
+    price: detailProd.price,
+    strick_price: detailProd.strick_price,
+    brand_info: detailProd.brand_info,
+  };
+  wishListArray.push(updated);
+  localStorage.setItem("WishListItems", JSON.stringify(wishListArray));
+});
 
-// document.querySelector("#quantity").addEventListener("change", function () {
-//   let quantity = document.querySelector("#quantity").value;
-//   let new_price = detailProd.price * quantity;
-//   let new_strick_price = detailProd.strick_price * quantity;
-
-//   let updated = {
-//     image : detailProd.image
-//   }
-// });
+let bagBtn = document.querySelector(".cart-btn");
+bagBtn.addEventListener("click", function () {
+  bagarr.push(detailProd);
+  localStorage.setItem("bagItems", JSON.stringify(bagarr));
+  window.location.href = "cart.html";
+});
