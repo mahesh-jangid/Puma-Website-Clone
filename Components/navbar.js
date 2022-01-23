@@ -48,7 +48,7 @@ function navbar() {
             </div>
             <div class="profile_section desktop_view">
               <div class="icon user_icon">
-                <a href="###"><i class="fas fa-user-plus"></i></a>
+                <a href="login.html"><i class="fas fa-user-plus"></i></a>
               </div>
               <!-- <div class="title user_title">Profile</div> -->
             </div>

@@ -61,7 +61,7 @@ function hideShipRet() {
 
 let detailProd = JSON.parse(localStorage.getItem("FullDetailProduct")) || [];
 
-let wishListArray = [];
+let wishListArray = JSON.parse(localStorage.getItem('wishlistItems'))||[];
 
 let prod_name = document.querySelector(".prod-name");
 let prod_actual_price = document.querySelector(".prod-price span");
