@@ -81,11 +81,6 @@ DOM_total.innerHTML = `Rs ${total_amt - total_sub.textContent}`;
 bagarr.map(function (el) {
   console.log(el.price);
   document.querySelector("#quantity").addEventListener("change", function () {
-    // let prod_name = document.querySelector(".prod-name");
-    // let prod_actual_price = document.querySelector(".prod-price span");
-    // let prod_strick_price = document.querySelector(".strick-price span");
-    // let prod_image = document.querySelector(".product-img1");
-    // let quantity = document.querySelector("#quantity").value;
     let prod_name = document.querySelector(".prod-name");
     let prod_actual_price = document.querySelector("#discount-price");
     let prod_strick_price = document.querySelector("#original-price");
@@ -105,4 +100,9 @@ bagarr.map(function (el) {
     wishListArray.push(updated);
     localStorage.setItem("WishListItems", JSON.stringify(wishListArray));
   });
+});
+
+const checkoutBtn = document.querySelector("#checkout");
+checkoutBtn.addEventListener("click", function () {
+  window.location.href = "checkout.html";
 });

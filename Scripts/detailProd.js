@@ -62,6 +62,10 @@ let wishListArray = [];
 let bagarr = [];
 let detailProd = JSON.parse(localStorage.getItem("FullDetailProduct")) || [];
 
+let detailProd = JSON.parse(localStorage.getItem("FullDetailProduct")) || [];
+
+let wishListArray = JSON.parse(localStorage.getItem("wishlistItems")) || [];
+
 let prod_name = document.querySelector(".prod-name");
 let prod_actual_price = document.querySelector(".prod-price span");
 let prod_strick_price = document.querySelector(".strick-price span");

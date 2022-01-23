@@ -228,7 +228,7 @@ let totalWishListItems =
 var DOMWishlist = document.querySelector("#wishlist_items");
 DOMWishlist.textContent = totalWishListItems;
 
-let wishlistArr = [];
+let wishlistArr = JSON.parse(localStorage.getItem("wishlistItems")) || [];
 function DisplayData(productData) {
   // document.querySelector(".product_cont").innerHTML = "";
   productData.map(function (elem) {
