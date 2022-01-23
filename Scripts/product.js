@@ -1,11 +1,11 @@
 var productData = [
   {
-    image:
-      "https://images.puma.com/image/upload/f_auto,q_auto,b_rgb:fafafa,w_600,h_600/global/375072/07/sv01/fnd/IND/fmt/png/Cruise-Rider-Silk-Women's-Shoes",
+    image:"https://images.puma.com/image/upload/f_auto,q_auto,b_rgb:fafafa,w_100,h_100/global/380435/04/sv01/fnd/IND/fmt/png/Electron-E-Unisex-Shoes"
+      ,
 
-    brand_info: "Cruise Rider Silk Women's Shoes",
-    price: 5599,
-    strick_price: 499,
+    brand_info: "PUMA Serve Pro Lite Unisex Shoes",
+    price: 2699,
+    strick_price: 6499,
   },
   {
     image:
@@ -13,7 +13,7 @@ var productData = [
 
     brand_info: "Suede Mayu Women's Sneakers",
     price: 6399,
-    strick_price: 499,
+    strick_price: 7499,
   },
   {
     image:
@@ -21,7 +21,7 @@ var productData = [
 
     brand_info: "Suede Mayu Women's Sneakers",
     price: 6399,
-    strick_price: 499,
+    strick_price: 7499,
   },
   {
     image:
@@ -29,7 +29,7 @@ var productData = [
 
     brand_info: "RS-Curve City Lights Women's Shoes",
     price: 5599,
-    strick_price: 1099,
+    strick_price: 5099,
   },
   {
     image:
@@ -43,7 +43,7 @@ var productData = [
       "https://images.puma.com/image/upload/f_auto,q_auto,b_rgb:fafafa,w_600,h_600/global/380207/01/sv01/fnd/IND/fmt/png/Cali-Star-International-Game-Women's-Sneakers",
     brand_info: "Cali Star International Game Women's Sneakers",
     price: 5949,
-    strick_price: 1200,
+    strick_price: 6200,
   },
   {
     image:
@@ -51,7 +51,7 @@ var productData = [
 
     brand_info: "Suede Mayu Triplex Tech Women's Sneakers",
     price: 5949,
-    strick_price: 399,
+    strick_price: 6399,
   },
   {
     image:
@@ -67,7 +67,7 @@ var productData = [
 
     brand_info: "Muse X-2 Metallic IMEVA Women's Shoes",
     price: 6499,
-    strick_price: 499,
+    strick_price: 7499,
   },
   {
     image:
@@ -82,14 +82,14 @@ var productData = [
       "https://images.puma.com/image/upload/f_auto,q_auto,b_rgb:fafafa,w_600,h_600/global/370548/02/sv01/fnd/IND/fmt/png/Carina-Slim-SL-SoftFoam+-Women's-Shoes",
     brand_info: "Carina Slim SL SoftFoam+ Women's Shoes",
     price: 3499,
-    strick_price: 1199,
+    strick_price: 7199,
   },
   {
     image:
       "https://images.puma.com/image/upload/f_auto,q_auto,b_rgb:fafafa,w_600,h_600/global/383833/03/sv01/fnd/IND/fmt/png/PUMA-R78-Raw-Metallics-WoMen's-Shoes",
     brand_info: "PUMA R78 Raw Metallics WoMen's Shoes",
-    price: 399,
-    strick_price: 1200,
+    price: 2399,
+    strick_price: 5200,
   },
   {
     image:
@@ -97,7 +97,7 @@ var productData = [
 
     brand_info: "Suede Mayu Women's Sneakers",
     price: 7999,
-    strick_price: 399,
+    strick_price: 9399,
   },
   {
     image:
@@ -105,7 +105,7 @@ var productData = [
 
     brand_info: "Mayze Glow Women's Sneakers",
     price: 7999,
-    strick_price: 949,
+    strick_price: 9949,
   },
   {
     image:
@@ -113,7 +113,7 @@ var productData = [
 
     brand_info: "Cruise Rider Vintage Tumbled Women's Sneakers",
     price: 6999,
-    strick_price: 1099,
+    strick_price: 8099,
   },
   {
     image:
@@ -121,7 +121,7 @@ var productData = [
 
     brand_info: "RS-X Reinvent Women's Sneakers",
     price: 8999,
-    strick_price: 1299,
+    strick_price: 9299,
   },
   {
     image:
@@ -129,7 +129,7 @@ var productData = [
 
     brand_info: "Wild Rider Tumbled Women's Sneakers",
     price: 8999,
-    strick_price: 1288,
+    strick_price: 9288,
   },
   {
     image:
@@ -137,7 +137,7 @@ var productData = [
 
     brand_info: "Adelina SoftFoam+ Women’s Ballet Shoes",
     price: 3799,
-    strick_price: 1199,
+    strick_price: 7199,
   },
   {
     image:
@@ -145,7 +145,7 @@ var productData = [
 
     brand_info: "PUMA Bruten Women's Shoes",
     price: 2199,
-    strick_price: 1149,
+    strick_price: 3149,
   },
   {
     image:
@@ -153,7 +153,7 @@ var productData = [
 
     brand_info: "Anzarun Lite Unisex Sneakers",
     price: 2999,
-    strick_price: 449,
+    strick_price: 4449,
   },
   {
     image:
@@ -161,7 +161,7 @@ var productData = [
 
     brand_info: "Anzarun Lite Unisex Sneakers",
     price: 2999,
-    strick_price: 449,
+    strick_price: 4449,
   },
   {
     image:
@@ -169,7 +169,7 @@ var productData = [
 
     brand_info: "Clasico Women's Unisex Sneakers",
     price: 3019,
-    strick_price: 1200,
+    strick_price: 4200,
   },
   {
     image:
@@ -177,7 +177,7 @@ var productData = [
 
     brand_info: "Suede Displaced Men Sneakers",
     price: 6999,
-    strick_price: 1199,
+    strick_price: 8199,
   },
   {
     image:
@@ -185,7 +185,7 @@ var productData = [
 
     brand_info: "Rebound Future Evo Unisex Sneakers",
     price: 6999,
-    strick_price: 799,
+    strick_price: 9799,
   },
   {
     image:
@@ -193,7 +193,7 @@ var productData = [
 
     brand_info: "Future Rider Twofold Unisex Sneakers",
     price: 6999,
-    strick_price: 899,
+    strick_price: 9899,
   },
   {
     image:
@@ -208,7 +208,7 @@ var productData = [
       "https://images.puma.com/image/upload/f_auto,q_auto,b_rgb:fafafa,w_600,h_600/global/374765/07/sv01/fnd/IND/fmt/png/PUMA-Rebound-JOY-SoftFoam+-Shoes",
     brand_info: "PUMA Rebound JOY SoftFoam+ Shoes",
     price: 6999,
-    strick_price: 399,
+    strick_price: 9399,
   },
 ];
 

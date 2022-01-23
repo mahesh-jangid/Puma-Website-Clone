@@ -88,7 +88,7 @@
               <input id="mob" type="text"placeholder="Number">
               <input id="mob2" type="text"placeholder="Additional Number">
             </div>
-            <input  type="submit" value="Place Order" />
+           <input  type="submit" value="Place Order" >
             </form>
             <!-- <div>
                 <button>Continue To Payment Method</button>
@@ -150,6 +150,8 @@
 </html>
 <script>
 document.querySelector("#input").addEventListener("submit", addAddress);
+var bag = JSON.parse(localStorage.getItem("bagItems"))||[];
+displaybag(bag)
 var arr = JSON.parse(localStorage.getItem("fullinfo"))||[];
 function addAddress(event) {
    event.preventDefault();
@@ -169,8 +171,36 @@ var infoObj={
      console.log(arr);
 
      localStorage.setItem("fullinfo", JSON.stringify(arr));
-//console.log(infoObj);
-}
+    }
+console.log(infoObj);
+// function displaybag(bag){
+//     var tbody = document.querySelector("tbody")
+//     tbody.textContent=""
+//     console.log(bozazArr)
+//     bozazArr.map(function(elem,index){
+//         var img = document.createElement("img")
+//         //height=70px append 
+//         var td1 = document.createElement("td")
+//         var td2 = document.createElement("td")
+//         var td3 = document.createElement("td")
+//         var td4 = document.createElement("td")
+//         var td5 = document.createElement("button")
+//         td5.addEventListener('click',function(){
+//             deleteRow(index)
+//         })
 
+    
+//         td1.textContent=elem.category;
+//         td2.textContent=elem.title
+//         td3.textContent=elem.description
+//         td4.textContent=elem.price
+//         td5.textContent="Delete"
+
+//         tr.append(td1,td2,td3,td4,td5)
+//         tbody.append(tr)
+//     })
+
+    
+// }
 
 </script>
