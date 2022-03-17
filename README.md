@@ -10,17 +10,6 @@
 <p>Checkout page</p>
 <p>Product wishlist page</p>
 
-    
-Team Member:
-
-We have six member team group :
-
-    Mahesh Jangid
-    Ashish Kumar
-    M GNANENDRA REDDY
-    Aniruddha Nalage
-    Rohit Singh
-
 Techologies Used :
 
     HTML
