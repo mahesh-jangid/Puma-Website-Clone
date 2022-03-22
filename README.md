@@ -1,19 +1,29 @@
 
+# Puma-Website-Clone
+
+A web application to buy all Puma products and user can filter products based on price and Checkout the products.
+## Authors
+
+- [@shashi530](https://github.com/shashi530)
+- [@mahesh-jangid](https://github.com/mahesh-jangid)
+- [@AASHISHKUMAR321](https://github.com/AASHISHKUMAR321)
+- [@Gourav1221](https://github.com/Gourav1221)
+- [@Arbaz86](https://github.com/Arbaz86)
+
+## Featur
+
+- Login Authentication
+- Cart Page
+- Filter products based on price
+- Checkout products
 
 
-<h1>Puma-Website-Clone Project</h1>
-<p>A web application to buy all Puma products</p>
+## 🛠 Skills
+Javascript, HTML, CSS, NodeJS, ExpressJS
 
 
-<p>We have covered these features in this website which is mention below :-</p>
-<p>Product filter page</p>
-<p>Checkout page</p>
-<p>Product wishlist page</p>
+## Tech Stack
 
-Techologies Used :
+**Client:** HTML, CSS, JavaSCript
 
-    HTML
-    CSS
-    JAVASCRIPT
-    MEDIA QUERY
-    GIT
+**Server:** NodeJS, Express
