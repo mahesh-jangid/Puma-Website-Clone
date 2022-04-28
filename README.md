@@ -3,6 +3,7 @@
 
 A web application to buy all Puma products and user can filter products based on price and Checkout the products.
 ## Authors
+
 -[@manjeetsingh100001](https://github.com/manjeetsingh100001)
 - [@shashi530](https://github.com/shashi530)
 - [@mahesh-jangid](https://github.com/mahesh-jangid)
