@@ -6,7 +6,7 @@ A web application to buy all Puma products and user can filter products based on
 
 
 - [@shashi530](https://github.com/shashi530)
-- -[@manjeetsingh100001](https://github.com/manjeetsingh100001)
+- [@manjeetsingh100001](https://github.com/manjeetsingh100001)
 - [@mahesh-jangid](https://github.com/mahesh-jangid)
 - [@AASHISHKUMAR321](https://github.com/AASHISHKUMAR321)
 - [@Gourav1221](https://github.com/Gourav1221)
