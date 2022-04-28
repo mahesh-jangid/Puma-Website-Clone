@@ -4,8 +4,9 @@
 A web application to buy all Puma products and user can filter products based on price and Checkout the products.
 ## Authors
 
--[@manjeetsingh100001](https://github.com/manjeetsingh100001)
+
 - [@shashi530](https://github.com/shashi530)
+- -[@manjeetsingh100001](https://github.com/manjeetsingh100001)
 - [@mahesh-jangid](https://github.com/mahesh-jangid)
 - [@AASHISHKUMAR321](https://github.com/AASHISHKUMAR321)
 - [@Gourav1221](https://github.com/Gourav1221)
@@ -27,4 +28,4 @@ Javascript, HTML, CSS, Advanced javascript,
 ## Tech Stack
 
 **Client:** HTML, CSS, JavaSCript
-
+**Server** Express,mongodb
